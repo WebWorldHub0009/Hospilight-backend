@@ -20,9 +20,7 @@ app.use('/api/products', productRouter);
 
 // ✅ Start Server
 const port = process.env.PORT || 3000;
-app.use("/",(req,res)=>{
-    res.send("i am root")
-})
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
